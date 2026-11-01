@@ -69,6 +69,16 @@ creates a new commit to record the change)
 58. git rm -r --cached path/to/myfolder/
 git add .gitignore
 git commit -m "Stop tracking myfolder and apply gitignore"
+59. winget install -e --id GitHub.GitLFS (FROM powershell)
+git lfs install
+git lfs track "*.png"
+git lfs track "*.jpg"
+git lfs track "*.jpeg"
+git lfs track "*.svg"
+Get-Content .gitattributes
+git lfs ls-files
+git add .gitattributes
+git commit -m "Configure Git LFS for image files"
 
 
 
